@@ -1,81 +1,130 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--==================== UNICONS ====================-->
-        
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="/assets/css/styles.css">
+    <!--==================== UNICONS ICONO ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
 
-        <title>Sitio web responsivo de portafolio</title>
-    </head>
-    <body>
-        <!--==================== Encabezado ====================-->
-        <header class="header" id="header">
-            
-        </header>
+    <!--==================== FUENTE ====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-        <!--==================== Contenido ====================-->
-        <main class="main">
-            <!--==================== Inicio ====================-->
-            <section class="home section" id="home">
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <title>Sitio web responsivo de portafolio</title>
+  </head>
+  <body>
+    <!--==================== Encabezado ====================-->
+    <header class="header" id="header">
+        <!--==================== Menu de Navegación ====================-->
+        <nav class="nav container">
+            <!-- Logo -->
+            <a href="#" class="nav__logo">Leonel</a>
+
+            <!-- Contenido del Menú -->
+            <div class="nav__menu" id="nav-menu">
                 
-            </section>
+                <!-- Los items del menú -->
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#Home" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i> Inicio
+                        </a>
+                    </li>
 
-            <!--==================== Acerca de ====================-->
-            <section class="about section" id="about">
-                
-            </section>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> Sobre mi
+                        </a>
+                    </li>
 
-            <!--==================== Habilidades ====================-->
-            <section class="skills section" id="skills">
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Habilidades
+                        </a>
+                    </li>
 
-            </section>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Servicios
+                        </a>
+                    </li>
 
-            <!--==================== Aptitudes ====================-->
-            <section class="qualification section">
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portafolio
+                        </a>
+                    </li>
 
-            </section>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Contactame
+                        </a>
+                    </li>
+                </ul>
 
-            <!--==================== Servicios ====================-->
-            <section class="services section" id="services">
-                
-            </section>
+                <!-- Botón para ocultar el contenido del menú -->
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
 
-            <!--==================== Portafolio ====================-->
-            <section class="portfolio section" id="portfolio">
-                
-            </section>
+            <!-- Botón para mostrar el contenido del menú -->
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-            <!--==================== Proyectos ====================-->
-            <section class="project section">
+    <!--==================== Contenido ====================-->
+    <main class="main">
+      <!--==================== Inicio ====================-->
+      <section class="home section" id="home"></section>
 
-            </section>
+      <!--==================== Acerca de ====================-->
+      <section class="about section" id="about"></section>
 
-            <!--==================== Contactame ====================-->
-            <section class="contact section" id="contact">
+      <!--==================== Habilidades ====================-->
+      <section class="skills section" id="skills"></section>
 
-            </section>
-        </main>
+      <!--==================== Aptitudes ====================-->
+      <section class="qualification section"></section>
 
-        <!--==================== Pie de Página ====================-->
-        <footer class="footer">
-         
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        
+      <!--==================== Servicios ====================-->
+      <section class="services section" id="services"></section>
 
-        <!--==================== SWIPER JS ====================-->
-        <script src="/assets/js/swiper-bundle.min.js"></script>
+      <!--==================== Portafolio ====================-->
+      <section class="portfolio section" id="portfolio"></section>
 
-        <!--==================== MAIN JS ====================-->
-        <script src="/assets/js/main.js"></script>
-    </body>
+      <!--==================== Proyectos ====================-->
+      <section class="project section"></section>
+
+      <!--==================== Contactame ====================-->
+      <section class="contact section" id="contact"></section>
+    </main>
+
+    <!--==================== Pie de Página ====================-->
+    <footer class="footer"></footer>
+
+    <!--==================== SCROLL TOP ====================-->
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="/assets/js/main.js"></script>
+  </body>
 </html>

@@ -1,39 +1,54 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
+/*==================== MOSTRAR MENU Y OCULTARLO ====================*/
+const navMenu = document.getElementById('nav-menu'),
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close')
 
-
-/*===== MENU SHOW =====*/
+/*===== MOSTRAR MENU =====*/
 /* Validate if constant exists */
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu')
+    })
+}
 
-
-/*===== MENU HIDDEN =====*/
+/*===== OCULTARLO MENU =====*/
 /* Validate if constant exists */
+if (navClose) {
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu')
+    })
+}
+
+/*==================== ELIMINAR EL MENÚ MÓVIL ====================*/
+const navLink = document.querySelectorAll('.nav__link')
+
+function linkAction() {
+    const navMenu = document.getElementById('nav-menu')
+    // Cuando pulsamos sobre cada nav__link, eliminamos la clase show-menu
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/*==================== HABILIDADES CON EL ACORDEÓN ====================*/
 
 
-/*==================== REMOVE MENU MOBILE ====================*/
+/*==================== FICHAS DE CUALIFICACIÓN ====================*/
 
 
-/*==================== ACCORDION SKILLS ====================*/
+/*==================== SERVICIO MODAL ====================*/
 
 
-/*==================== QUALIFICATION TABS ====================*/
+/*==================== DESLIZAR PORTAFOLIO  ====================*/
 
 
-/*==================== SERVICES MODAL ====================*/
+
+/*==================== SECCIONES DE DESPLAZAMIENTO ENLACE ACTIVO ====================*/
 
 
-/*==================== PORTFOLIO SWIPER  ====================*/
+/*==================== CAMBIAR EL FONDO DE LA CABECERA ====================*/
 
 
-/*==================== TESTIMONIAL ====================*/
+/*==================== MOSTRAR DESPLAZAMIENTO HACIA ARRIBA ====================*/
 
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-
-
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
-
-
-/*==================== SHOW SCROLL UP ====================*/ 
-
-
-/*==================== DARK LIGHT THEME ====================*/ 
+/*==================== DARK LIGHT TEMA ====================*/ 
